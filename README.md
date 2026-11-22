@@ -19,7 +19,7 @@ Tailwind is loaded from the CDN with the brand colours registered in each page's
 Most styling lives in css/style.css for this prototype. To migrate to a build, install Tailwind, point its content config at the HTML and JS files, and move the tokens into tailwind.config.
 
 ## Replacing placeholders
-- Portrait: assets/images/portrait.jpg (index.html, about.html)
+- Portrait: assets/images/portrait.png (index.html, about.html)
 - Project thumbnails: assets/images/project-N.jpg and SITE.projects in js/main.js
 - CV: rename the path `assets/documents/CV-PLACEHOLDER.pdf` in index.html and drop the real PDF there
 - Testimonials: SITE.testimonials in js/main.js (keep the "Placeholder" tag until replaced with genuine feedback)

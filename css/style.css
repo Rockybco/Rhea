@@ -97,6 +97,7 @@ p{margin:0 0 16px;max-width:62ch}
 .hero-media{position:relative;justify-self:center;width:min(100%,400px)}
 .hero-media::before{content:"";position:absolute;inset:24px -24px -24px 24px;background:var(--terracotta);border-radius:200px 200px 18px 18px;z-index:0}
 .ph-portrait{position:relative;z-index:1;aspect-ratio:4/5;border-radius:200px 200px 18px 18px}
+.portrait{position:relative;z-index:1;display:block;aspect-ratio:4/5;object-fit:cover;border:1px solid var(--line);border-radius:200px 200px 18px 18px;box-shadow:0 12px 28px -14px rgba(23,18,14,.45)}
 @keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
 .hero-copy>*,.hero-media,.hero-simple>*{animation:rise var(--slow) var(--ease-out) both}
 .hero-copy>:nth-child(2){animation-delay:.08s}
