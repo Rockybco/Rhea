@@ -37,19 +37,21 @@
   const here = location.pathname.split('/').pop() || 'index.html';
   const linkHtml = ([href, label]) => `<a href="${href}"${href === here ? ' aria-current="page"' : ''}>${label}</a>`;
 
-  /* Shared header */
+  /* Shared header: glassmorphic top bar — MARIAM logo + "Let's work together" */
   const header = document.createElement('header');
   header.className = 'site-header';
   header.innerHTML = `
     <div class="container bar">
-      <a class="logo" href="index.html" aria-label="MARIAM, home">MARIAM</a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu"><span></span><span></span></button>
-      <nav class="site-nav" id="site-nav" aria-label="Primary">
-        ${SITE.nav.map(linkHtml).join('')}
-        <a class="btn btn-primary btn-sm" href="contact.html">Let's work together</a>
-      </nav>
+      <a class="logo" href="index.html" aria-label="MARIAM, home"><svg class="logo-svg" viewBox="0 0 176 16" width="176" height="16" role="img" aria-label="MARIAM"><path d="M 4,16 L 4,0 L 14,8 L 26,0 L 26,16 Z"/><path d="M 44,0 L 32,16 L 56,16 Z"/><rect x="62" y="0" width="8" height="16"/><rect x="70" y="0" width="8" height="8"/><rect x="78" y="8" width="6" height="8"/><rect x="94" y="0" width="6" height="16"/><path d="M 124,0 L 112,16 L 136,16 Z"/><path d="M 148,16 L 148,0 L 158,8 L 170,0 L 170,16 Z"/></svg></a>
+      <a class="btn btn-primary btn-sm" href="contact.html">Let's work together</a>
     </div>`;
   document.body.insertBefore(header, $('main'));
+
+  /* Links pill: Home, About, Work, Contact — centre bottom, glassmorphic */
+  const nav = document.createElement('nav');
+  nav.className = 'site-nav'; nav.id = 'site-nav'; nav.setAttribute('aria-label', 'Primary');
+  nav.innerHTML = SITE.nav.map(linkHtml).join('');
+  document.body.insertBefore(nav, $('main'));
 
   /* Shared footer. Social and contact entries stay as text until real links are supplied. */
   const footer = document.createElement('footer');
@@ -73,14 +75,6 @@
       <p class="copy">&copy; <span data-year></span> Sulaiman Mariam Opeyemi. All rights reserved.</p>
     </div>`;
   $('main').after(footer);
-
-  /* Mobile menu */
-  const toggle = $('.nav-toggle', header);
-  toggle.addEventListener('click', () => {
-    const open = header.classList.toggle('nav-open');
-    toggle.setAttribute('aria-expanded', String(open));
-    toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
-  });
 
   /* Rendering from SITE */
   const render = (name, html) => { const n = $(`[data-render="${name}"]`); if (n) n.innerHTML = html; };
