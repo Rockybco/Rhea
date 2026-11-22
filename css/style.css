@@ -20,7 +20,7 @@ a{color:var(--deep)}
 .skip:focus{left:8px}
 
 h1,h2,h3{color:var(--espresso);margin:0 0 16px}
-h1{font-family:var(--font-body);font-weight:400;font-size:18px;line-height:1.5;letter-spacing:normal;color:var(--muted)}
+main h1{font-family:var(--font-body);font-weight:400;font-size:18px;line-height:1.5;letter-spacing:normal;color:var(--muted)}
 h2{font-family:var(--font-ui);font-weight:600;font-size:clamp(30px,4.4vw,42px);line-height:1.08;letter-spacing:-1.05px}
 h3{font-family:var(--font-ui);font-weight:600;font-size:24px;line-height:1.1}
 .h2-sm{font-size:clamp(26px,3.2vw,32px);letter-spacing:-.6px;margin-bottom:24px}
