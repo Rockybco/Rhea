@@ -41,10 +41,8 @@
   const header = document.createElement('header');
   header.className = 'site-header';
   header.innerHTML = `
-    <div class="container bar">
-      <a class="logo" href="index.html" aria-label="MARIAM, home">MARIAM</a>
-      <a class="btn btn-primary btn-sm" href="contact.html">Let's work together</a>
-    </div>`;
+    <a class="logo" href="index.html" aria-label="MARIAM, home">MARIAM</a>
+    <a class="btn btn-primary btn-sm" href="contact.html">Let's work together</a>`;
   document.body.insertBefore(header, $('main'));
 
   /* Links pill: Home, About, Work, Contact — centre bottom, glassmorphic */
