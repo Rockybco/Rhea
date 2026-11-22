@@ -62,10 +62,9 @@ p{margin:0 0 16px;max-width:62ch}
   background:rgba(253,250,244,.75); backdrop-filter:blur(28px);
   border-bottom:1px solid rgba(23,18,14,.06);
 }
-.bar{height:100%;display:flex;align-items:center;gap:24px}
+.bar{height:100%;display:flex;align-items:center;justify-content:space-between;gap:24px}
 main{padding-top:68px}
-.logo{color:var(--orange)}
-.logo-svg{display:block;fill:currentColor}
+.logo{font-family:var(--font-display);font-weight:800;font-size:22px;letter-spacing:3px;color:var(--espresso);text-decoration:none}
 
 /* Links pill: Home, About, Work, Contact — centre bottom, spaced, glassmorphic */
 .site-nav{

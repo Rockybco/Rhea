@@ -42,7 +42,7 @@
   header.className = 'site-header';
   header.innerHTML = `
     <div class="container bar">
-      <a class="logo" href="index.html" aria-label="MARIAM, home"><svg class="logo-svg" viewBox="0 0 176 16" width="176" height="16" role="img" aria-label="MARIAM"><path d="M 4,16 L 4,0 L 14,8 L 26,0 L 26,16 Z"/><path d="M 44,0 L 32,16 L 56,16 Z"/><rect x="62" y="0" width="8" height="16"/><rect x="70" y="0" width="8" height="8"/><rect x="78" y="8" width="6" height="8"/><rect x="94" y="0" width="6" height="16"/><path d="M 124,0 L 112,16 L 136,16 Z"/><path d="M 148,16 L 148,0 L 158,8 L 170,0 L 170,16 Z"/></svg></a>
+      <a class="logo" href="index.html" aria-label="MARIAM, home">MARIAM</a>
       <a class="btn btn-primary btn-sm" href="contact.html">Let's work together</a>
     </div>`;
   document.body.insertBefore(header, $('main'));
