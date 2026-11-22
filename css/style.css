@@ -87,6 +87,7 @@ p{margin:0 0 16px;max-width:62ch}
   .site-nav{position:absolute;bottom:calc(100% + 10px);left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:var(--ivory);padding:12px 24px 24px;border-radius:12px;opacity:0;visibility:hidden;transform:translateY(8px);transition:opacity var(--fast) var(--ease),transform var(--slow) var(--ease-out),visibility var(--slow)}
   .nav-open .site-nav{opacity:1;visibility:visible;transform:none}
   .site-nav a:not(.btn){padding:12px 0;background:none;box-shadow:none}
+  .site-nav a[aria-current="page"]{background:var(--white);box-shadow:0 0 16px -2px rgba(23,18,14,.5),0 2px 8px rgba(23,18,14,.18)}
   .site-nav .btn{margin-top:16px}
 }
 
