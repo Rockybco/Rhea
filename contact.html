@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact | Sulaiman Mariam Opeyemi</title>
+<meta name="description" content="Get in touch with Mariam about social media management, content strategy or digital marketing.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@800&family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@400;500;600&display=swap">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{espresso:'#17120E',cream:'#F1EADE',ivory:'#FDFAF4',soft:'#F9F6F1',light:'#EEE9E0',muted:'#6B5E50',terracotta:'#D18C5D',deep:'#6D3927',orange:'#E28E36',burgundy:'#A80102'}}}}</script>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/main.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<main id="main">
+  <section class="hero-simple container">
+    <p class="eyebrow">Contact</p>
+    <h1>Let's create something meaningful together.</h1>
+    <p class="lead">Whether you're looking for someone to manage your social media presence, develop a content strategy or strengthen your digital marketing, I'd love to hear from you.</p>
+  </section>
+
+  <section class="section section-soft">
+    <div class="container contact-grid">
+      <div>
+        <h2 class="h2-sm">Contact details</h2>
+        <ul class="info-list">
+          <li><span>Email</span><em class="todo">Add email address</em></li>
+          <li><span>WhatsApp</span><em class="todo">Add WhatsApp number</em></li>
+          <li><span>Instagram</span><em class="todo">Add profile link</em></li>
+          <li><span>LinkedIn</span><em class="todo">Add profile link</em></li>
+          <li><span>Other platforms</span><em class="todo">Add profile links</em></li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="h2-sm">Send a message</h2>
+        <form id="contact-form" class="form" novalidate data-endpoint="" aria-describedby="form-status">
+          <div class="field">
+            <label for="name">Full name <span aria-hidden="true">*</span></label>
+            <input id="name" name="name" type="text" autocomplete="name" required aria-describedby="err-name">
+            <p class="error" id="err-name" aria-live="polite"></p>
+          </div>
+          <div class="field">
+            <label for="email">Email address <span aria-hidden="true">*</span></label>
+            <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="err-email">
+            <p class="error" id="err-email" aria-live="polite"></p>
+          </div>
+          <div class="field">
+            <label for="company">Company or brand name</label>
+            <input id="company" name="company" type="text" autocomplete="organization">
+            <p class="error" id="err-company" aria-live="polite"></p>
+          </div>
+          <div class="field">
+            <label for="service">Service required <span aria-hidden="true">*</span></label>
+            <select id="service" name="service" required aria-describedby="err-service">
+              <option value="">Choose a service</option>
+              <option>Social media strategy</option>
+              <option>Social media management</option>
+              <option>Content creation</option>
+              <option>Content planning and calendars</option>
+              <option>Community management</option>
+              <option>Copywriting and captions</option>
+              <option>Analytics and performance reporting</option>
+              <option>Digital marketing</option>
+            </select>
+            <p class="error" id="err-service" aria-live="polite"></p>
+          </div>
+          <div class="field">
+            <label for="budget">Project budget <span class="optional">(optional)</span></label>
+            <input id="budget" name="budget" type="text" placeholder="Optional">
+          </div>
+          <div class="field">
+            <label for="message">Message <span aria-hidden="true">*</span></label>
+            <textarea id="message" name="message" rows="6" required aria-describedby="err-message"></textarea>
+            <p class="error" id="err-message" aria-live="polite"></p>
+          </div>
+          <button class="btn btn-primary" type="submit">Send message</button>
+          <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </div>
+    <div class="container prose closing">
+      <p>Thank you for stopping by. Whether your brand needs day-to-day management or a full strategy, I'd be glad to talk it through with you.</p>
+    </div>
+  </section>
+</main>
+</body>
+</html>
