@@ -65,7 +65,8 @@
         <nav aria-label="Footer">${SITE.nav.map(linkHtml).join('')}</nav>
         <div>
           <p class="foot-label">Contact</p>
-          <p>Add email address</p>
+          <p><a href="mailto:oniyepoopeyemi878@gmail.com">oniyepoopeyemi878@gmail.com</a></p>
+          <p><a href="tel:+2348167706110">+234 816 770 6110</a></p>
           <p class="foot-label">Social</p>
           <p>Add social profile links</p>
         </div>
